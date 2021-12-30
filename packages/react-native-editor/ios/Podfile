@@ -5,6 +5,9 @@ platform :ios, '13.0'
 require_relative '../../../node_modules/react-native/scripts/react_native_pods'
 require_relative '../../../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
+# This will be removed once the Aztec version is released
+pod 'WordPress-Aztec-iOS', :git => 'https://github.com/wordpress-mobile/WordPress-Aztec-iOS.git', :commit => '36d5f26a1c8a728769810456ab51fefe6f37a7c4'
+
 target 'GutenbergDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
