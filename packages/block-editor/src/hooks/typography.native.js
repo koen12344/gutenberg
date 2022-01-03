@@ -36,7 +36,8 @@ export function TypographyPanel( props ) {
 
 	// only enable TypographyPanel for development
 	// eslint-disable-next-line no-undef
-	if ( isDisabled || ! isSupported || ! __DEV__ ) return null;
+	//if ( isDisabled || ! isSupported || ! __DEV__ ) return null;
+	if ( isDisabled || ! isSupported ) return null;
 
 	return (
 		<InspectorControls>

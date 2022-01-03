@@ -933,10 +933,10 @@ export class RichText extends Component {
 			baseGlobalStyles?.elements?.[ tagName ]?.typography?.lineHeight;
 		let lineHeight;
 
-		// eslint-disable-next-line no-undef
-		if ( ! __DEV__ ) {
-			return;
-		}
+		// // eslint-disable-next-line no-undef
+		// if ( ! __DEV__ ) {
+		// 	return;
+		// }
 
 		if ( baseGlobalStyles?.typography?.lineHeight ) {
 			lineHeight = parseFloat( baseGlobalStyles?.typography?.lineHeight );
