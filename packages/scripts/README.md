@@ -37,6 +37,7 @@ _Example:_
 		"lint:md:js": "wp-scripts lint-md-js",
 		"lint:pkg-json": "wp-scripts lint-pkg-json",
 		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
 		"start": "wp-scripts start",
 		"test:e2e": "wp-scripts test-e2e",
 		"test:unit": "wp-scripts test-unit-js"
@@ -302,6 +303,24 @@ _Example:_
 #### Advanced information
 
 The command checks which packages whose name starts with `@wordpress/` are used in the project by reading the package.json file, and then executes `npm install @wordpress/package1@latest @wordpress/package2@latest ... --save` to change the package versions to the latest one.
+
+### `packages-update`
+
+Creates a zip file for a WordPress plugin.
+
+_Example:_
+
+```json
+{
+	"scripts": {
+		"plugin-zip": "wp-scripts plugin-zip"
+	}
+}
+```
+
+By default, it uses [Plugin Handbook best practices](https://developer.wordpress.org/plugins/plugin-basics/best-practices/#file-organization) to discover files.
+
+#### Advanced information
 
 ### `start`
 
