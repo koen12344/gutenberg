@@ -25,7 +25,7 @@ module.exports = function parseXdebugMode( value ) {
 		throwXdebugModeError( value );
 	}
 
-	if ( value.length === 0 ) {
+	if ( value.length === 0 || value === 'undefined' ) {
 		return 'debug';
 	}
 
